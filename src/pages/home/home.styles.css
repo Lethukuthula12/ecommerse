@@ -1,0 +1,299 @@
+
+
+.section1, .section3, .section4{
+  display: flex;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section1 {
+  position: relative;
+  background-color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+.section2 {
+  background-color: var(--primary-color);
+   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.section3 {
+   flex-direction: column !important;
+   height: 700px;
+}
+.section4 {
+  background-color: var(--primary-color);
+}
+
+.section1::after{
+  content: "";
+  position: absolute;
+  top:0;
+  background-color: var(--primary-color);
+   clip-path: polygon(100% 100%, 100% 50%, 50% 100%);
+}
+
+/* ***********************Landing Paage ************* */
+.ladding-page-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.ladding-page-row1 h1{
+  font-size: 4rem;
+}
+.ladding-page-row1 span{
+  color: var(--second-color);
+}
+
+.ladding-page-row1 button{
+  padding: .5rem 2rem;
+  border: none;
+  background-color: var(--second-color);
+ 
+}
+.btn-div{
+  position: relative;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  padding: .5rem;
+  text-align: center;
+}
+.ladding-page-row1, .slide-page-row1 button:hover{
+cursor: pointer;
+border: none;
+}
+
+.ladding-page-row2{
+  background: url("../../utils//yello-girl.png") no-repeat center center/cover;
+}
+
+/* ************logo ******** */
+.div-logo{
+  width: 100%;
+  padding: 0 3rem;
+}
+.logo-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ width: 100%;
+ height: 200px;
+ padding: 1rem auto;
+}
+.logo:first-child{
+  width: 5% !important;
+  height: 10%;
+}
+.logo{
+width: 100%;
+height: 100%;
+}
+.lego, .pep{
+  width: 400px;
+}
+
+/* ***********Slide ****** */
+.slide-container{
+  margin: 3rem 3rem;
+  padding-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+.slide-page-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: left;
+  width: 100%;
+  padding: 3rem 1rem;
+}
+.slide-page-row1{
+  margin-left: 5rem;
+  width: 60%;
+}
+.slide-page-row2{
+ background-color: var(--second-color);
+ width: 400px;
+ height: 570px;
+ position: relative;
+ 
+
+}
+.time{
+  display: flex;
+  flex-direction: row;
+}
+
+.days, .hours, .minites, .seconds{
+  padding: 1rem 4rem;
+}
+.btn-add-cart{
+  padding: .5rem 1rem;
+  border: none;
+  background-color: var(--second-color);
+  text-align: center;
+}
+.btn-div-slide{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.slide-page-row1 h1{
+ text-align: left;
+ padding-top: 3rem;
+ 
+}
+.slide-page-row1 p {
+  text-align: left;
+
+}
+
+
+
+.btn-div-slide {
+  width: 10rem;
+  position: relative;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  padding: .5rem;
+}
+
+.number{
+  color: var(--second-color);
+  font-size: 35px;
+}
+.slide{
+  top: 20px;
+  left:5%;
+  z-index: 2;
+  height: 300px;
+  width: 400px;
+  margin-right: 10rem;
+  padding-bottom: 10rem;
+}
+
+/* *********************populat products *********** */
+
+.div-separator{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.div-separator h2{
+text-align: center;
+font-size: 25px;
+padding-top: 2rem;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 3rem 3rem;
+}
+.cards ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.cards li{
+  padding:  0 3rem;
+}
+.card{
+  padding: 3rem 3rem;
+  position: absolute;
+}
+
+/* *********** slide promotion ************** */
+
+.slide-image{
+  background-color: var(--second-color);
+  padding: 3rem 0;
+  margin-left: 3rem;
+  width: 350px;
+  height: 500px;
+  position: relative;
+  z-index: 0;
+}
+.slide-content {
+  background-color: turquoise;
+  position: absolute;
+  background: center;
+  background-position: center;
+  width: 350px;
+  height: 500px;
+  z-index:2;
+  top: 5%;
+  left: 7%;
+}
+.center-slide{
+  display: flex;
+  margin: auto;
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  position: relative;
+  padding-left: -4rem;
+  padding-bottom: 4rem;
+  
+}
+.center-slide h1{
+  font-size: 55px;
+  font-weight: 900 bold;
+  color: var(--second-color);
+  text-align: center;
+  padding-left: 2rem;
+}
+.promo{
+  position: absolute;
+  top:8%;
+  width: 350px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.center-text{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: auto 2rem;
+}
+
+.center-text span{
+  line-height: 2;
+}
+
+
+/*************** What People are saying ******** */
+
+.testimorial-slide {
+  width: 100% !important;
+  
+  margin: 0 3rem;
+  
+
+}
+.dilivery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 3rem;
+  background-color: var(--second-color);
+  width: 100%;
+text-align: center;
+}
+.delivery-proc1 p{
+  padding-top: 1rem;
+}
+.delivery-proc2 p {
+  padding-top: 1rem;
+}
+.delivery-proc3 p {
+  padding-top: 1rem;
+}
